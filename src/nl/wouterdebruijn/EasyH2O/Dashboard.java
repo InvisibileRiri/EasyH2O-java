@@ -14,6 +14,8 @@ public class Dashboard {
     private JLabel headerField;
     private JButton randomTextButton;
     private JLabel outputLabel;
+    private JButton moreButtonsButton;
+    private JLabel extraDynLabel;
 
     static public JFrame jFrame;
 
@@ -26,6 +28,13 @@ public class Dashboard {
             @Override
             public void actionPerformed(ActionEvent e) {
                 outputLabel.setText(String.format("This is some random text, added to this label via logic%nHere is a random number: %d", new Random().nextInt(10)));
+                updateSize();
+            }
+        });
+        moreButtonsButton.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                extraDynLabel.setText("Dit is wat text!: " + System.currentTimeMillis());
                 updateSize();
             }
         });
