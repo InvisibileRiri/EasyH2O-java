@@ -48,4 +48,8 @@ public class Dashboard {
     public static void updateSize() {
         if (jFrame != null) jFrame.pack();
     }
+
+    public void setOutputLabel(JLabel outputLabel) {
+        this.outputLabel = outputLabel;
+    }
 }
