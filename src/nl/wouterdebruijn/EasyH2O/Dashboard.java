@@ -41,7 +41,11 @@ public class Dashboard {
         jFrame.pack();
         jFrame.setVisible(true);
     }
-
+/**
+ * print test tekst
+ */
+    System.out.println("UwU")
+    
     /**
      * Redraws the JFrame to be sized to components.
      */
